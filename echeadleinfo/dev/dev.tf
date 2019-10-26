@@ -7,6 +7,6 @@ module "main-vpc" {
 module "instances" {
     source         = "../modules/instances"
     ENV            = "dev"
-    VPC_ID         = module.main-vpc.vpc.vpc_id 
+    VPC_ID         = module.main-vpc.vpc_id 
     PUBLIC_SUBNETS = module.main-vpc.public_subnets 
 }
