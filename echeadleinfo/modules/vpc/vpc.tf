@@ -1,3 +1,9 @@
+variable "ENV" {
+}
+
+variable "AWS_REGION" {
+}
+
 module "main-vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
